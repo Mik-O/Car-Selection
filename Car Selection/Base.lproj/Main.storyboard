@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,7 +55,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JQe-c7-1u9" secondAttribute="trailing" constant="20" id="G0L-zg-Mfj"/>
                             <constraint firstItem="JQe-c7-1u9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VmO-BU-IPW"/>
@@ -64,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="86" y="4"/>
+            <point key="canvasLocation" x="-700" y="2"/>
         </scene>
         <!--Вопрос №-->
         <scene sceneID="222-Xr-uIE">
@@ -75,10 +76,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="08S-k9-KrY">
-                                <rect key="frame" x="0.0" y="116" width="375" height="4"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="0.0"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlB-sg-X6o">
-                                <rect key="frame" x="20" y="140" width="41.5" height="20"/>
+                                <rect key="frame" x="20" y="136" width="41.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Fj9-Lb-fFd"/>
                                 </constraints>
@@ -230,13 +231,6 @@
                             <constraint firstItem="Voz-ba-tYe" firstAttribute="top" secondItem="08S-k9-KrY" secondAttribute="bottom" constant="160" id="vow-Er-ih8"/>
                             <constraint firstItem="eYD-Ca-fMm" firstAttribute="trailing" secondItem="sz0-Nv-wX7" secondAttribute="trailing" constant="20" id="zDh-Yp-hFW"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Voz-ba-tYe"/>
-                                <exclude reference="sz0-Nv-wX7"/>
-                                <exclude reference="SLq-cV-xaK"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="CSf-ai-Lyu"/>
                 </viewController>
@@ -272,6 +266,55 @@
             </objects>
             <point key="canvasLocation" x="3351" y="-343"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dC8-AT-IPd">
+            <objects>
+                <viewController id="g6B-su-ci4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="33S-fB-7N1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-Sv-SYl">
+                                <rect key="frame" x="147.5" y="80" width="80.5" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MC1-48-DIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcT-l5-wJ4">
+                                        <rect key="frame" x="13" y="150" width="54" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gl-me-2X4">
+                                <rect key="frame" x="20" y="523" width="335" height="44"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start choosing a car"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vau-0q-prN"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="Vau-0q-prN" firstAttribute="trailing" secondItem="5gl-me-2X4" secondAttribute="trailing" constant="20" id="ULF-9s-pzD"/>
+                            <constraint firstItem="5gl-me-2X4" firstAttribute="leading" secondItem="Vau-0q-prN" secondAttribute="leading" constant="20" id="Yl9-FF-Uvr"/>
+                            <constraint firstItem="CmR-Sv-SYl" firstAttribute="top" secondItem="Vau-0q-prN" secondAttribute="top" constant="60" id="avc-TP-HeC"/>
+                            <constraint firstItem="Vau-0q-prN" firstAttribute="bottom" secondItem="5gl-me-2X4" secondAttribute="bottom" constant="100" id="nlB-VG-tz5"/>
+                            <constraint firstItem="CmR-Sv-SYl" firstAttribute="centerX" secondItem="33S-fB-7N1" secondAttribute="centerX" id="wZ0-qb-6OS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyZ-6y-Jsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="1"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Wg-gb-21F">
             <objects>
@@ -301,13 +344,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="tGb-12-9jK" kind="relationship" relationship="viewControllers" id="bGY-yc-S4h"/>
+                        <segue destination="N7e-XL-PdZ" kind="relationship" relationship="viewControllers" id="gGn-x5-7E3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgT-R4-Qfh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2516" y="3.1484257871064472"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="1ee-8D-Jun">
             <objects>
                 <viewController id="N7e-XL-PdZ" sceneMemberID="viewController">
@@ -317,6 +361,7 @@
                         <viewLayoutGuide key="safeArea" id="2s5-ty-Iym"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="7sM-R2-k37"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIM-IK-Bi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,8 +369,14 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
