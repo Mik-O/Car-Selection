@@ -11,6 +11,7 @@ class WelcomeViewController: UIViewController {
     
     // MARK: -IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var startChoosingCarButton: UIButton!
     
     // MARK: - Public properties
     var user: User!
@@ -19,6 +20,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         welcomeLabel.text = "Welcome, \(user.username)"
+        startChoosingCarButton.layer.cornerRadius = 15
         
     }
 }
