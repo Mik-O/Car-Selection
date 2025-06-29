@@ -90,7 +90,7 @@
         <!--Вопрос №-->
         <scene sceneID="222-Xr-uIE">
             <objects>
-                <viewController id="XkQ-IW-jnj" sceneMemberID="viewController">
+                <viewController id="XkQ-IW-jnj" customClass="QuestionsViewController" customModule="Car_Selection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1iK-0s-HlN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,10 +253,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="CSf-ai-Lyu"/>
+                    <connections>
+                        <outlet property="multipleStackView" destination="sz0-Nv-wX7" id="Z9h-Nk-j2J"/>
+                        <outlet property="questionLabel" destination="jlB-sg-X6o" id="hJ7-Xm-qBH"/>
+                        <outlet property="questionProgressView" destination="08S-k9-KrY" id="yC9-gO-gG1"/>
+                        <outlet property="rangedSlider" destination="1rj-WY-6P9" id="oc3-jh-nXY"/>
+                        <outlet property="rangedStackView" destination="Voz-ba-tYe" id="6hr-Wq-DSd"/>
+                        <outlet property="singleStackView" destination="SLq-cV-xaK" id="mQE-Sw-wdn"/>
+                        <segue destination="aJR-35-svk" kind="show" identifier="showResult" id="lc9-b5-z1I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRH-fY-w6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664.8" y="2.2488755622188905"/>
+            <point key="canvasLocation" x="1694" y="3"/>
         </scene>
         <!--Item-->
         <scene sceneID="3WY-gX-5Ur">
@@ -382,6 +391,7 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aJR-35-svk" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="kIa-zK-7EV"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9HU-Fb-JBP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
