@@ -299,7 +299,7 @@
             </objects>
             <point key="canvasLocation" x="1694" y="3"/>
         </scene>
-        <!--Item-->
+        <!--Result-->
         <scene sceneID="3WY-gX-5Ur">
             <objects>
                 <viewController id="tGb-12-9jK" customClass="ResultsViewController" customModule="Car_Selection" customModuleProvider="target" sceneMemberID="viewController">
@@ -333,7 +333,7 @@
                             <constraint firstItem="RbN-5G-Wlz" firstAttribute="leading" secondItem="rvq-le-Ndy" secondAttribute="leading" constant="20" id="tXW-pq-qYl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UKK-Nk-rRr"/>
+                    <tabBarItem key="tabBarItem" title="Result" image="list.bullet.rectangle" catalog="system" id="UKK-Nk-rRr"/>
                     <connections>
                         <outlet property="countryOfCarsResultLabel" destination="CdC-6u-Vh8" id="FnQ-7p-Smi"/>
                         <outlet property="descriptionSelectionOfCarResultLabel" destination="l83-Vj-jOp" id="le2-ze-jCt"/>
@@ -454,7 +454,7 @@
             </objects>
             <point key="canvasLocation" x="2516" y="3.1484257871064472"/>
         </scene>
-        <!--Item-->
+        <!--more details-->
         <scene sceneID="1ee-8D-Jun">
             <objects>
                 <viewController id="N7e-XL-PdZ" customClass="ListOfCarsViewController" customModule="Car_Selection" customModuleProvider="target" sceneMemberID="viewController">
@@ -464,7 +464,7 @@
                         <viewLayoutGuide key="safeArea" id="2s5-ty-Iym"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7sM-R2-k37"/>
+                    <tabBarItem key="tabBarItem" title="more details" image="list.bullet.rectangle.fill" catalog="system" id="7sM-R2-k37"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIM-IK-Bi6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,6 +472,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
