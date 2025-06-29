@@ -51,8 +51,8 @@ class QuestionsViewController: UIViewController {
     
     // MARK: -Prepare
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let resultVC = segue.destination as! ResultViewController
-        resultVC.answersChoosen = answersChoosen
+        let tapBarVC = segue.destination as! TapBarViewController
+        tapBarVC.answers = answersChoosen
         
         print("Массив ответов: \(answersChoosen)")
     }
@@ -66,7 +66,7 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func multipleAnswerButtonPressed() {
-        for (multiple, answer) in zip(multipleSwiches, currentAnswers) {
+        for (multipleSwich, answer) in zip(multipleSwiches, currentAnswers) {
             if multipleSwich.isOn {
                 answersChoosen.append(answer)
             }
