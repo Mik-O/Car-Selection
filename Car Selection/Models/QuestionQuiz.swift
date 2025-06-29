@@ -21,26 +21,26 @@ extension Question {
     static func getQuestions() -> [Question] {
         [
             Question(
-                text: "Какую пищу вы предпочитаете?",
+                text: "Что вы цените больше в автомобилях?",
                 type: .single,
                 answers: [
-                    Answer(text: "Стейк", type: .russia),
-                    Answer(text: "Рыба", type: .japan),
-                    Answer(text: "Морковь", type: .germany),
-                    Answer(text: "Кукуруза", type: .usa)
+                    Answer(text: "Стоимость содержания", type: .russia),
+                    Answer(text: "Надежность", type: .japan),
+                    Answer(text: "Динамику разгона", type: .germany),
+                    Answer(text: "Комфорт", type: .usa)
                 ]
             ),
             Question(
                 text: "Что вам нравится больше?",
                 type: .multiple,
                 answers: [
-                    Answer(text: "Плавать", type: .russia),
-                    Answer(text: "Спать", type: .japan),
-                    Answer(text: "Обниматься", type: .germany),
-                    Answer(text: "Есть", type: .usa)
+                    Answer(text: "Чинить", type: .russia),
+                    Answer(text: "просто ехать", type: .japan),
+                    Answer(text: "динамично гонять", type: .germany),
+                    Answer(text: "чилить за рулем", type: .usa)
                 ]
             ),            Question(
-                text: "Любите ли вы ездить на машине?",
+                text: "Любите ли вы тратить деньги на содержание своего автомобиля?",
                 type: .ranged,
                 answers: [
                     Answer(text: "Ненавижу", type: .russia),

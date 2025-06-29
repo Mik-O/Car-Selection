@@ -308,17 +308,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-5G-Wlz">
-                                <rect key="frame" x="20" y="116" width="335" height="140.5"/>
+                                <rect key="frame" x="20" y="116" width="335" height="144"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇷🇺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-6u-Vh8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇷🇺" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdC-6u-Vh8">
                                         <rect key="frame" x="140.5" y="0.0" width="54" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l83-Vj-jOp">
-                                        <rect key="frame" x="147" y="120" width="41.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l83-Vj-jOp">
+                                        <rect key="frame" x="143.5" y="120" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -335,8 +335,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="UKK-Nk-rRr"/>
                     <connections>
-                        <outlet property="animalResultLabel" destination="CdC-6u-Vh8" id="FnQ-7p-Smi"/>
-                        <outlet property="descriptionAnimalResultLabel" destination="l83-Vj-jOp" id="le2-ze-jCt"/>
+                        <outlet property="countryOfCarsResultLabel" destination="CdC-6u-Vh8" id="FnQ-7p-Smi"/>
+                        <outlet property="descriptionSelectionOfCarResultLabel" destination="l83-Vj-jOp" id="le2-ze-jCt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozZ-MH-7ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

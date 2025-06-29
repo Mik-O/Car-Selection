@@ -13,6 +13,7 @@ class TapBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         setupViewControllers(with: answers)
     }
      
