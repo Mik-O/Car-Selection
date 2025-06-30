@@ -98,11 +98,8 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="08S-k9-KrY">
                                 <rect key="frame" x="0.0" y="96" width="375" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlB-sg-X6o">
-                                <rect key="frame" x="20" y="120" width="41.5" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Fj9-Lb-fFd"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlB-sg-X6o">
+                                <rect key="frame" x="20" y="120" width="335" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -110,19 +107,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Voz-ba-tYe">
                                 <rect key="frame" x="20" y="260" width="335" height="147"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1rj-WY-6P9">
+                                    <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1rj-WY-6P9">
                                         <rect key="frame" x="-2" y="0.0" width="339" height="39"/>
                                     </slider>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="164" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-W8-Ha7">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="164" translatesAutoresizingMaskIntoConstraints="NO" id="Xbv-W8-Ha7">
                                         <rect key="frame" x="0.0" y="65" width="335" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-za-Wgw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj7-za-Wgw">
                                                 <rect key="frame" x="0.0" y="0.0" width="129.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-MH-pwA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-MH-pwA">
                                                 <rect key="frame" x="293.5" y="0.0" width="41.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -130,7 +127,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97R-fq-Onh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97R-fq-Onh">
                                         <rect key="frame" x="0.0" y="112.5" width="335" height="34.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Next"/>
@@ -253,6 +250,7 @@
                             <constraint firstItem="jlB-sg-X6o" firstAttribute="leading" secondItem="eYD-Ca-fMm" secondAttribute="leading" constant="20" id="3cB-pT-6Ul"/>
                             <constraint firstItem="Voz-ba-tYe" firstAttribute="centerY" secondItem="1iK-0s-HlN" secondAttribute="centerY" id="5ub-Ix-haS"/>
                             <constraint firstItem="08S-k9-KrY" firstAttribute="trailing" secondItem="eYD-Ca-fMm" secondAttribute="trailing" id="6cJ-1W-l26"/>
+                            <constraint firstItem="eYD-Ca-fMm" firstAttribute="trailing" secondItem="jlB-sg-X6o" secondAttribute="trailing" constant="20" id="6u8-PA-SGc"/>
                             <constraint firstItem="SLq-cV-xaK" firstAttribute="centerX" secondItem="1iK-0s-HlN" secondAttribute="centerX" id="EoI-nF-T6a"/>
                             <constraint firstItem="Voz-ba-tYe" firstAttribute="centerX" secondItem="1iK-0s-HlN" secondAttribute="centerX" id="HNM-of-6Ya"/>
                             <constraint firstItem="sz0-Nv-wX7" firstAttribute="leading" secondItem="eYD-Ca-fMm" secondAttribute="leading" constant="20" id="KII-31-Y7h"/>
